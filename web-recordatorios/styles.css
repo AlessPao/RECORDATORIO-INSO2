@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8e9d6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 600px;
+    width: 90%;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #ff9a76;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+input[type="text"],
+textarea,
+input[type="date"],
+input[type="email"],
+select {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ffdab9;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #ff9a76;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff7f50;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #fff1e6;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li h3 {
+    margin: 0;
+    color: #ff9a76;
+}
+
+li p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.completed {
+    background-color: #ffe6cc;
+    text-decoration: line-through;
+    color: #999;
+}
+
+.completed h3,
+.completed p {
+    color: #999;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+.complete-btn,
+.edit-btn,
+.delete-btn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.complete-btn {
+    color: #28a745;
+}
+
+.edit-btn {
+    color: #ffc107;
+}
+
+.delete-btn {
+    color: #dc3545;
+}
+
+.complete-btn:hover,
+.edit-btn:hover,
+.delete-btn:hover {
+    color: #333;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    input[type="text"],
+    textarea,
+    input[type="date"],
+    input[type="email"],
+    select {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}

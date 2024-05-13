@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RECORDATORIO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("G74xpZ0oHaEpF82J6");
+        })();
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>RECORDATORIO PAGOS</h1>
+        <form id="taskForm">
+            <input type="text" id="taskTitle" placeholder="Título de la tarea" required>
+            <textarea id="taskDescription" placeholder="Descripción detallada (opcional)"></textarea>
+            <input type="date" id="taskDate" required>
+            <input type="email" id="taskEmail" placeholder="Correo electrónico" required>
+            <button type="submit">Agregar tarea</button>
+        </form>
+        <ul id="taskList"></ul>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
